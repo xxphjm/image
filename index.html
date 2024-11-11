@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>網頁標題</title>
+    <meta property="og:title" content="網頁標題">
+    <meta name="description" content="網頁描述">
+    <meta property="og:descript" content="描述">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+</head>
+<body>
+    <input type="file" id="myFile" name="filename">
+    <input type="submit" id='sub'>
+</body>
+<script>
+    $(document).ready(function () {
+    $('#sub').click(function (e) { 
+      let data={
+          'file':$('#id').val(),
+      }
+        console.log(data)
+    });
+
+    });
+</script>
+</html>
